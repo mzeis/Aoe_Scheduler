@@ -84,7 +84,7 @@ class Aoe_Scheduler_Block_Adminhtml_Scheduler_Grid extends Mage_Adminhtml_Block_
                 'header'  => $this->__('Job'),
                 'index'   => 'job_code',
                 'type'    => 'options',
-                'options' => Mage::getSingleton('aoe_scheduler/job')->getCollection()->toOptionHash('job_code', 'name')
+                'options' => Mage::getSingleton('aoe_scheduler/job')->getCollection()->toOptionHash('job_code', 'job_code')
             )
         );
         $this->addColumn(
