@@ -135,25 +135,13 @@ class Aoe_Scheduler_Block_Adminhtml_Timeline extends Mage_Adminhtml_Block_Widget
 
 
     /**
-     * Get all available job codes
+     * Get all available jobs
      *
      * @return array
      */
-    public function getAvailableJobCodes()
+    public function getAvailableJobs()
     {
-        return array_keys($this->schedules);
-    }
-
-
-    /**
-     * Get schedules for given code
-     *
-     * @param string $code
-     * @return array
-     */
-    public function getSchedulesForCode($code)
-    {
-        return $this->schedules[$code];
+        return $this->schedules;
     }
 
 

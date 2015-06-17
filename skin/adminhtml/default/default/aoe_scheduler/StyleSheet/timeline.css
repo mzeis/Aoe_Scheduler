@@ -13,19 +13,18 @@
     margin-left: -100%;
 }
 
-.configuration {
-    padding: 5px;
-}
-
 #leftcolumn .row {
     background-color: #F6F6F6;
     border-right: 1px solid #DADFE0;
+    height: 30px;
+    padding: 5px;
 }
 
 #leftcolumn .row.hours {
     background-color: transparent;
+    height: 20px;
     text-align: right;
-    padding-right: 5px;
+    padding: 0 5px;
     font-size: 10px;
 }
 
@@ -64,6 +63,11 @@ div.timeline-panel {
 
 div.timeline {
     position: relative;
+}
+
+.timeline-row-info {
+    font-size: 10px;
+    line-height: 12px;
 }
 
 div.hours {
